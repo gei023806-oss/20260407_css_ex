@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* ============================================
+    내 소개페이지 완성
+   6차시 종합 실습 : CSS 소개 페이지 완성
+   이 파일 전체를 style.css 로 사용하세요.
+   TODO 표시된 곳을 완성해보세요!
+   ============================================ */
+
+/* ★ 1. 리셋 & 기본 설정 ★ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+  background: #a8a8a8;
+}
+
+
+/* ★ 2. HEADER ★ */
+
+/* TODO 1 ─────────────────────────────────────
+   header, nav 스타일을 완성하세요.
+   - header: 배경색, padding, color
+   - nav a: 색상, margin, hover 효과
+────────────────────────────────────────────── */
+header {
+  color: #000000; padding: 0%; background-color: #757575;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: #000000;
+  font-weight: 1000;
+}
+
+nav a:hover {
+   color: #F1F5F9;
+  transform: translateX(-5px);
+  box-shadow: 0 8px 8px rgb(255, 255, 255);
+  transition: all 1s ease;
+}
+
+nav a:active{
+  transform: translateX(0);
+  box-shadow: none;
+}
+
+
+/* ★ 3. MAIN 콘텐츠 ★ */
+
+/* TODO 2 ─────────────────────────────────────
+   main 과 section 스타일을 완성하세요.
+   - main: max-width, margin auto, padding
+   - section: background, padding, border-radius, margin-bottom, hover 효과
+────────────────────────────────────────────── */
+main {max-width: 1000px;
+  margin: auto;
+  
+}
+
+
+img {
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+  border: 3px solid #0000004d;
+  style="left"
+}
+
+
+/* ★ 4. 텍스트 ★ */
+
+/* TODO 3 ─────────────────────────────────────
+   h1, h2, p, a 스타일을 완성하세요.
+────────────────────────────────────────────── */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  margin-top: 25px;
+  
+}
+
+.el::after{
+            content: ' *';
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+h2::after {
+  content: ✨;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 12px;
+   font-size: 36px;
+  font-weight: 700;
+}
+
+a {
+  /* color, text-decoration */
+}
+
+a:hover {
+  /* hover 색상 */
+}
+
+
+
+
+
+/* ★ 6. 목록 ★ */
+
+/* TODO 5 ─────────────────────────────────────
+   ul, li 스타일을 완성하세요.
+   nth-child 도 사용해보세요!
+────────────────────────────────────────────── */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #F1F5F9;
+  /* color 추가 */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.as{
+  background-color: rgb(255, 219, 18);
+}
+
+.sa{background-color: yellow;}
+
+.ll{background-color: white;}
+
+/* ★ 7. 버튼 ★ */
+
+/* TODO 6 ─────────────────────────────────────
+   .btn 과 .btn:hover 를 완성하세요.
+   transition 과 transform 꼭 포함!
+────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  text-decoration: none;
+  /* background, color, transition 추가 */
+}
+
+.btn:hover {
+  /* background, transform, box-shadow 추가 */
+}
+
+
+/* ★ 8. 폼 ★ */
+input, textarea, select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ★ 9. FOOTER ★ */
+
+/* TODO 7 ─────────────────────────────────────
+   footer 스타일을 완성하세요.
+────────────────────────────────────────────── */
+footer {
+  /* background, color, text-align, padding, margin-top */
+}
+
+footer a {
+  color: #93C5FD;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: #F59E0B;
+}
+    </style>
+<body>
+    <nav>
+    <a href="#">임승배를 소개합니다</a>
+    </nav>
+     <section>
+    <img src="ads.jpg" alt="프로필 이미지">
+    <h1>임승배</h1>
+    <h2>프론트엔드 개발자를 목표로 노력중입니다</h2>
+     <ul>
+      <li class="el">vscode를 다룹니다</li>
+      <li class="el">ai와 상호작용합니다</li>
+      <li class="el">컴퓨터를 다룹니다</li>
+    </ul>
+    <p>꿈을 이루기 위한 목표</p>
+    <table border="1">
+        <tr>
+            <th class="as">순위</th>
+            <th class="as">목표</th>
+            <th class="as">노력</th>
+
+        </tr>
+
+        <tr>
+            <td class="sa">1</td>
+            <td class="ll">나만의 코딩 툴 만들기</td>
+            <td class="ll">코딩에 익숙해진다</td>
+        </tr>
+
+        <tr>
+            <td class="sa">2</td>
+            <td class="ll">우수한 디자인 작품 개시</td>
+            <td class="ll">평소 디자인에 관한 공부</td>
+        </tr>
+
+        <span class="btn">감사합니다</span>
+  </section>
+</body>
+
+</html>
